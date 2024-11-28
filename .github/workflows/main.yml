@@ -27,7 +27,7 @@ jobs:
           status: ${{ job.status }}
           author_name: Health-Check
           fields: repo,message,commit,action,eventName,ref,workflow,job,took # 보낼 정보들
-          github_token: ${{ secrets.ACCESS_TOKEN_GIT }}
+          github_token: ${{ secrets.TOKEN }}
 
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SECRET_URL }} # required
